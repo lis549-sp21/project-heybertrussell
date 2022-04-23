@@ -1,4 +1,16 @@
 body{
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
+    color: white;
+    background-color: black;
 }
+
+@media (prefers-color-scheme: light) {
+    body{
+        color: black;
+        background-color: beige;
+    }
+}
+
+h1,h2,h3{font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;}
