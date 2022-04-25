@@ -1,0 +1,7 @@
+For my project, I am turning my domain (rbrownell.com) into a resume site. There are a whole lot of things that need to be done. SO hopefuly I give you enough content and explanations so you know I'm on the right track, thinking about things productively, and trying out things.
+
+    1.  I am using the index to form a template that I will use for the other pages on the site, so the other pages aren't filled in yet. There are a ton of things that we haven't learned about yet (e.g. flexboxes, javascript) that I know I want to include in the template. For instance, I want to have a toggle switch for light & dark mode (you might see that I already added code to the index that automatically formats the page based on the user's dark/light preference) and to use dropdown boxes of text. Also, I am excited to learn how to make and use templates, and I'm hoping there's some way that when you alter a template that it automatically alters the pages that rely on it.
+    
+    2. rawstuff.html contains the text of my CV, which I've started turning into HTML. I will move portions of it over to the other pages when I get my template mostly solidified. But it's rough right now because I'm not entirely sure which elements I'll be using for each thing.
+
+    3. I don't ahve any professional pictures of myself (which are a typical feature of the resume site's I've looked at for inspiration), and I don't know what type of stylistinc images I want to use because I'm still not set on a color theme.
