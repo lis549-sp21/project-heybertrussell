@@ -14,3 +14,107 @@ body{
 
 h1,h2,h3{font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;}
+
+
+#center{
+    text-align: center;
+}
+
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+/* Navigation */
+
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: darkgreen;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+ 
+nav h1{
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+
+nav li{
+    display: inline;
+}
+  
+nav,ul{
+    padding: 0;  
+}
+
+nav ul{
+    margin-top: 0
+}
+  
+nav ul li{
+    margin: 0rem .25rem;
+}
+
+.now{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+nav a:link, a:visited{
+    text-decoration: none;
+    color: white;
+  }
+
+nav li:hover{
+    border-bottom: 1rem solid;
+    padding-bottom: 0;
+    transition: .25s;
+}
+
+/* Header */
+
+header{
+    padding-top: 6rem;
+}
+/* main */
+
+main{
+    margin-bottom: 4rem;
+}
+
+/* Footer */
+
+footer{
+    padding-top:inherit;
+    font-style: italic;
+    font-size:small;
+    background-color: purple;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: darkgreen;
+}
+
+footer p{
+    margin-left:1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer p:first-of-type{
+    margin-top: 1rem;
+}
+
+footer p:last-of-type{
+    margin-bottom:1rem;
+}
