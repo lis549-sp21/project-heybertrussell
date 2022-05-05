@@ -106,18 +106,33 @@ footer{
     padding-top:inherit;
     font-style: italic;
     font-size:small;
-    background-color: purple;
+    background-color: darkgreen;
     position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    background-color: darkgreen;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-direction: column ;
 }
 
 footer p{
-
     margin-top: 0;
     margin-bottom: 0;
+    color:white;
+    
+}
+
+footer p a:link{
+    text-decoration:none ;
 }
 
 footer p:first-of-type{
@@ -125,6 +140,6 @@ footer p:first-of-type{
 }
 
 footer p:last-of-type{
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 

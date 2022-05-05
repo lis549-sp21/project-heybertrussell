@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded" />
     <meta name="author" content="Rob Brownell">
     <meta name="description" content="RBrownell.com">
     <title>My Page Title</title>
@@ -18,7 +19,7 @@
             <li>|</li>
             <li> <a href="/experience/experience.html">Experience</a></li>
             <li>|</li>
-            <li><a href="/skills/skills.html">Skills</a></li>
+            <li> <a href="/skills/skills.html">Skills</a></li>
             <li>|</li>
             <li><a href="works/works.html">Works</a></li>
         </ul>
@@ -51,12 +52,19 @@
     </main>
 
     <footer>
-        <div id=left>
-            <p>credits</p>
-            <p>middle</p>
-            <p>&copy; Rob Brownell, 2022</p>
+        <div class="flex-container">
+            <div class="flex-item" id="left">
+                <p>credits</p>
+                <p>middle</p>
+                <p>&copy; Rob Brownell, 2022</p>
+            </div>
+            <div class="flex-item" id="right">
+                <p>credits</p>
+                <p> <a href="https://orcid.org/0000-0001-5597-4230">
+                    <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="12" height="12" /> 0000-0001-5597-4230</a></p>
+                <p><span class="material-symbols-rounded">mail</span><a href="rbrownl@uw.edu">rbrownl@uw.edu</a></p>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>
