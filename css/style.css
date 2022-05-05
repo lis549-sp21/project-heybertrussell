@@ -1,35 +1,41 @@
-body{
+body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
     color: white;
-    background-color: black;
+    background-color: #112D32;
 }
 
 @media (prefers-color-scheme: light) {
-    body{
+    body {
         color: black;
-        background-color: beige;
+        background-color: #88BDBC;
     }
 }
 
-h1,h2,h3,h4,h5{font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-weight: 700;}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+}
 
 
-#center{
+#center {
     text-align: center;
 }
 
-#right{
+#right {
     text-align: right;
     margin-right: 1rem;
 }
 
-#left{
+#left {
     margin-left: 1rem;
 }
 
-.container{
+.container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -38,52 +44,54 @@ h1,h2,h3,h4,h5{font-family: 'Atkinson Hyperlegible', sans-serif;
 
 /* Navigation */
 
-nav{
+nav {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: darkgreen;
+    background-color: #6E6658;
     padding: .5rem;
     padding-bottom: 1rem;
     color: white;
 }
- 
-nav h1{
+
+nav h1 {
     margin-bottom: .5rem;
     margin-top: 1rem;
     font-size: 3rem;
 }
 
 
-nav li{
+nav li {
     display: inline;
 }
-  
-nav,ul{
-    padding: 0;  
+
+nav,
+ul {
+    padding: 0;
 }
 
-nav ul{
+nav ul {
     margin-top: 0
 }
-  
-nav ul li{
+
+nav ul li {
     margin: 0rem .25rem;
 }
 
-.now{
+.now {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-style: solid;
 }
 
-nav a:link, a:visited{
+nav a:link,
+a:visited {
     text-decoration: none;
     color: white;
-  }
+}
 
-nav li:hover{
+nav li:hover {
     border-bottom: 1rem solid;
     padding-bottom: 0;
     transition: .25s;
@@ -91,55 +99,55 @@ nav li:hover{
 
 /* Header */
 
-header{
+header {
     padding-top: 6rem;
 }
+
 /* main */
 
-main{
+main {
     margin-bottom: 4rem;
 }
 
 /* Footer */
 
-footer{
-    padding-top:inherit;
+footer {
+    padding-top: inherit;
     font-style: italic;
-    font-size:small;
-    background-color: darkgreen;
+    font-size: small;
+    background-color: #6E6658;
     position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
 }
 
-.flex-item{
+.flex-item {
     display: flex;
     flex-grow: 1;
     flex-basis: 50%;
-    flex-direction: column ;
+    flex-direction: column;
 }
 
-footer p{
+footer p {
     margin-top: 0;
     margin-bottom: 0;
-    color:white;
-    
+    color: white;
+
 }
 
-footer p a:link{
-    text-decoration:none ;
+footer p a:link {
+    text-decoration: none;
 }
 
-footer p:first-of-type{
+footer p:first-of-type {
     margin-top: 1rem;
 }
 
-footer p:last-of-type{
+footer p:last-of-type {
     margin-bottom: 1rem;
 }
-
