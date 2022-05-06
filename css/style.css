@@ -44,6 +44,11 @@ h5 {
 
 /* Navigation */
 
+nav p{
+    margin:0;
+    padding-top: 1rem;
+}
+
 nav {
     position: fixed;
     top: 0px;
@@ -56,9 +61,10 @@ nav {
 }
 
 nav h1 {
-    margin-bottom: .5rem;
-    margin-top: 1rem;
+    margin-bottom: .25rem;
+    margin-top: 0;
     font-size: 3rem;
+    line-height: 2.5rem;
 }
 
 
@@ -106,7 +112,11 @@ header {
 /* main */
 
 main {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+}
+
+main ul{
+    margin-left: 1.5rem;
 }
 
 /* Footer */
@@ -138,6 +148,9 @@ footer p {
     margin-bottom: 0;
     color: white;
 
+}
+footer .material-symbold-rounded{
+    line-height: -1rem;
 }
 
 footer p a:link {
