@@ -42,6 +42,7 @@ h5 {
     padding: 1rem;
 }
 
+
 /* Navigation */
 
 nav p{
@@ -147,13 +148,13 @@ footer p {
     margin-top: 0;
     margin-bottom: 0;
     color: white;
-
 }
 
 
 
 footer p a:link {
     text-decoration: none;
+    color: inherit;
 }
 
 footer p:first-of-type {
@@ -162,4 +163,10 @@ footer p:first-of-type {
 
 footer p:last-of-type {
     margin-bottom: 1rem;
+}
+
+footer .material-symbols-rounded{
+    position: relative;
+    top: 3px;
+    font-size: 16px;
 }
