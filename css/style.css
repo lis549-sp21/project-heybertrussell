@@ -2,14 +2,22 @@ body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
     color: white;
-    background-color: #112D32;
+    background-color: #037272;
     font-size: larger;
+}
+
+nav, footer{
+    background-color: #1c1f4c;
 }
 
 @media (prefers-color-scheme: light) {
     body {
         color: black;
-        background-color: #88BDBC;
+        background-color: #edebd9;
+    }
+
+    nav, footer{
+        background-color: #00b4bf;
     }
 }
 
@@ -65,10 +73,8 @@ nav {
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: #6E6658;
     padding: .5rem;
     padding-bottom: 1rem;
-    color: white;
 }
 
 nav h1 {
@@ -105,7 +111,7 @@ nav ul li {
 nav a:link,
 a:visited {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 nav li a:hover {
@@ -165,7 +171,6 @@ footer {
     padding-top: inherit;
     font-style: italic;
     font-size:medium;
-    background-color: #6E6658;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -188,7 +193,7 @@ footer {
 footer p {
     margin-top: 0;
     margin-bottom: 0;
-    color: white;
+    color: inherit;
 }
 
 
