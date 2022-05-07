@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     color: white;
     background-color: #112D32;
+    font-size: larger;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,6 +20,15 @@ h4,
 h5 {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
+}
+
+h3{
+    margin-bottom: .25rem;
+    font-size: xx-large;
+}
+
+h2{
+    text-decoration:underline
 }
 
 
@@ -98,8 +108,8 @@ a:visited {
     color: white;
 }
 
-nav li:hover {
-    border-bottom: 1rem solid;
+nav li a:hover {
+    border-bottom: 1.125rem solid;
     padding-bottom: 0;
     transition: .25s;
 }
@@ -107,10 +117,25 @@ nav li:hover {
 /* Header */
 
 header {
-    padding-top: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+}
+
+header h2{
+    font-size: 3rem;
+    margin-bottom: 0;
 }
 
 /* main */
+
+main h3:first-of-type{
+    margin-top: 0rem;
+}
+
+main em{
+    font-weight: bold;
+    font-style: normal;
+}
 
 main {
     margin-bottom: 5rem;
@@ -120,18 +145,34 @@ main ul{
     margin-left: 1.5rem;
 }
 
+main ul,li{
+    margin-top:.25rem;
+}
+
+main h4{
+    margin-top: 1rem;
+    margin-bottom:.5rem
+}
+
+main h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
 /* Footer */
 
 footer {
     padding-top: inherit;
     font-style: italic;
-    font-size: small;
+    font-size:medium;
     background-color: #6E6658;
     position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
 }
+
+
 
 .flex-container {
     display: flex;
