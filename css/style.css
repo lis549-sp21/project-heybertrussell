@@ -33,9 +33,13 @@ h5 {
     font-weight: 700;
 }
 
+h1{
+    margin-top: 1rem;
+}
+
 h2{
     text-decoration:underline;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
     text-align: center;
@@ -44,12 +48,13 @@ h2{
 h3{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h4{
-    margin-top: 5rem;
-    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
 }
 
 h5{
@@ -75,6 +80,7 @@ h5{
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
+    margin-top: 5rem;
 }
 
 
@@ -96,7 +102,6 @@ nav {
 
 nav h1 {
     margin-bottom: .25rem;
-    margin-top: 0;
     font-size: 3rem;
     line-height: 2.5rem;
 }
@@ -140,8 +145,8 @@ nav li a:hover {
 
 /* Header */
 
-header {
-    padding: 5rem;
+main .maincont{
+    padding-top: 6 rem;
 }
 
 /* main */
@@ -164,11 +169,6 @@ main ul,li{
     margin-top:.25rem;
 }
 
-main h4{
-    margin-top: 1rem;
-    margin-bottom:.5rem
-}
-
 main .nover{
     margin-top: 0;
 }
@@ -180,6 +180,35 @@ main .nunder{
 main .position{
     font-size: 1.25rem;
     font-style: italic;
+    font-weight: bold;
+}
+
+main .flex-container{
+    display: flex;
+}
+
+main .flex-left{
+    text-align: right;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 30%;
+    flex-direction:column;
+    padding-right: .5rem;
+}
+
+main .flex-right{
+    text-align: left;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 70%;
+    flex-direction: column;
+    padding-right: 5rem;
+    padding-left: .5rem;
+    margin-right
+}
+
+main .flex-container p, main .flex-container li, main .flex-container ul{
+    margin-bottom: 0;
 }
 
 /* Footer */
@@ -194,26 +223,22 @@ footer {
     width: 100%;
 }
 
-
-
-.flex-container {
+footer .flex-container {
     display: flex;
 }
 
-.flex-item {
+footer .flex-item {
     display: flex;
     flex-grow: 1;
     flex-basis: 50%;
     flex-direction: column;
 }
 
-footer p {
+footer .flex-container p{
     margin-top: 0;
     margin-bottom: 0;
     color: inherit;
 }
-
-
 
 footer p a:link {
     text-decoration: none;
@@ -224,7 +249,7 @@ footer p:first-of-type {
     margin-top: 1rem;
 }
 
-footer p:last-of-type {
+footer .flex-container p:last-of-type {
     margin-bottom: 1rem;
 }
 
@@ -235,23 +260,25 @@ footer .material-symbols-rounded{
 }
 
 @media (max-width:768px){
-    html{
-        font-size: 20px;
-    }
     
     h2{
         font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
 
     h3{
-        font-size: 1.3rem
+        font-size: 1.25rem;
     }
 
     h4{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     h5{
+        font-size: 1.1rem;
+    }
+
+    main .position{
         font-size: 1.1rem;
     }
 
@@ -268,19 +295,24 @@ footer .material-symbols-rounded{
         display: none;
     }
 
-    header{
-        padding-top: 3rem;
+    main .container{
+        margin-top: 3rem;
     }
     
     footer p:first-of-type {
         margin-top: .5rem;
     }
     
+
     footer p:last-of-type {
         margin-bottom: .5rem;
     }
 
     nav ul li {
         margin: 0rem 0rem;
+    }
+
+    main .flex-right{
+        padding-right: 1rem;
     }
 }
