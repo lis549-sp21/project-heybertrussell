@@ -1,9 +1,12 @@
+html{
+    font-size: 20px;
+}
+
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
     color: white;
     background-color: #037272;
-    font-size: larger;
 }
 
 nav, footer{
@@ -30,15 +33,29 @@ h5 {
     font-weight: 700;
 }
 
-h3{
-    margin-bottom: .25rem;
-    font-size: xx-large;
-}
-
 h2{
-    text-decoration:underline
+    text-decoration:underline;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h4{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+h5{
+    margin-bottom: .25rem;
+    font-size: 1.25rem;
+}
 
 #center {
     text-align: center;
@@ -54,7 +71,7 @@ h2{
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -87,6 +104,7 @@ nav h1 {
 
 nav li {
     display: inline;
+    font-size: 1.25rem;
 }
 
 nav,
@@ -123,20 +141,11 @@ nav li a:hover {
 /* Header */
 
 header {
-    padding-top: 10rem;
-    padding-bottom: 0rem;
-}
-
-header h2{
-    font-size: 3rem;
-    margin-bottom: 0;
+    padding: 5rem;
 }
 
 /* main */
 
-main h3:first-of-type{
-    margin-top: 0rem;
-}
 
 main em{
     font-weight: bold;
@@ -160,9 +169,17 @@ main h4{
     margin-bottom:.5rem
 }
 
-main h2{
-    font-size: 3rem;
+main .nover{
+    margin-top: 0;
+}
+
+main .nunder{
     margin-bottom: 0;
+}
+
+main .position{
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 /* Footer */
@@ -170,7 +187,7 @@ main h2{
 footer {
     padding-top: inherit;
     font-style: italic;
-    font-size:medium;
+    font-size:.75rem;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -215,4 +232,55 @@ footer .material-symbols-rounded{
     position: relative;
     top: 3px;
     font-size: 16px;
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 1.4rem;
+    }
+
+    h3{
+        font-size: 1.3rem
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    h5{
+        font-size: 1.1rem;
+    }
+
+    nav li{
+        font-size: 1rem;
+}
+    nav h1{
+        font-size: 2rem;
+        line-height: 1rem;
+        padding-bottom: .5rem;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    header{
+        padding-top: 3rem;
+    }
+    
+    footer p:first-of-type {
+        margin-top: .5rem;
+    }
+    
+    footer p:last-of-type {
+        margin-bottom: .5rem;
+    }
+
+    nav ul li {
+        margin: 0rem 0rem;
+    }
 }
