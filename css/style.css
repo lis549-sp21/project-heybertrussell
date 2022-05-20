@@ -1,40 +1,48 @@
+/* General Properties */
+
 html{
     font-size: 20px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: white;
 }
 
 body {
-    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
-    color: white;
-    background-color: #037272;
+    background-color: #374049;
 }
 
 nav, footer{
-    background-color: #1c1f4c;
+    background-color: #2e3030;
 }
 
 @media (prefers-color-scheme: light) {
     body {
         color: black;
-        background-color: #edebd9;
+        background-color: #f0fff0;
     }
 
     nav, footer{
-        background-color: #00b4bf;
+        background-color: #bbbebe;
+    }
+
+    footer a:hover, body a:hover{
+        color: #556372;
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-weight: 700;
+a, a:visited {
+    color: inherit;
+}
+
+a:hover{
+    color: #d0d0d0;
 }
 
 h1{
     margin-top: 1rem;
+    margin-bottom: .25rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
 }
 
 h2{
@@ -66,15 +74,6 @@ h5{
     text-align: center;
 }
 
-#right {
-    text-align: right;
-    margin-right: 1rem;
-}
-
-#left {
-    margin-left: 1rem;
-}
-
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -82,7 +81,6 @@ h5{
     padding: 1rem;
     margin-top: 5rem;
 }
-
 
 /* Navigation */
 
@@ -99,13 +97,6 @@ nav {
     padding: .5rem;
     padding-bottom: 1rem;
 }
-
-nav h1 {
-    margin-bottom: .25rem;
-    font-size: 3rem;
-    line-height: 2.5rem;
-}
-
 
 nav li {
     display: inline;
@@ -131,26 +122,18 @@ nav ul li {
     text-decoration-style: solid;
 }
 
-nav a:link,
-a:visited {
+nav a{
     text-decoration: none;
-    color: inherit;
 }
 
 nav li a:hover {
     border-bottom: 1.125rem solid;
     padding-bottom: 0;
     transition: .25s;
+    color: inherit;
 }
 
-/* Header */
-
-main .maincont{
-    padding-top: 6 rem;
-}
-
-/* main */
-
+/* Main */
 
 main em{
     font-weight: bold;
@@ -183,37 +166,27 @@ main .position{
     font-weight: bold;
 }
 
-main .flex-container{
-    display: flex;
+/* Main Grid */
+
+main .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: .5rem;
 }
 
-main .flex-left{
+main .grid-item-l{
     text-align: right;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 30%;
-    flex-direction:column;
-    padding-right: .5rem;
+    font-weight: bold;
 }
 
-main .flex-right{
+main .grid-item-r{
     text-align: left;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 70%;
-    flex-direction: column;
-    padding-right: 5rem;
-    padding-left: .5rem;
-}
-
-main .flex-container p, main .flex-container li, main .flex-container ul{
-    margin-bottom: 0;
 }
 
 /* Footer */
 
 footer {
-    padding-top: inherit;
     font-style: italic;
     font-size:.75rem;
     position: fixed;
@@ -222,41 +195,46 @@ footer {
     width: 100%;
 }
 
-footer .flex-container {
-    display: flex;
+footer p{
+    margin: 0;
 }
 
-footer .flex-item {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 50%;
-    flex-direction: column;
-}
-
-footer .flex-container p{
-    margin-top: 0;
-    margin-bottom: 0;
-    color: inherit;
-}
-
-footer p a:link {
+footer a{
     text-decoration: none;
     color: inherit;
-}
-
-footer p:first-of-type {
-    margin-top: 1rem;
-}
-
-footer .flex-container p:last-of-type {
-    margin-bottom: 1rem;
 }
 
 footer .material-symbols-rounded{
     position: relative;
     top: 3px;
-    font-size: 16px;
+    font-size: .65rem;
 }
+
+/* Footer Grid */
+
+footer .fcontainer{
+    margin: .5rem 1rem;
+    max-width: none;
+}
+
+footer .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0rem;
+    row-gap: .1rem;
+    align-items: start;
+}
+
+footer .grid-item-l{
+    text-align: left;
+}
+
+footer .grid-item-r{
+    text-align:right;
+}
+
+
+/* Responsive Elements */
 
 @media (max-width:768px){
     
@@ -298,20 +276,11 @@ footer .material-symbols-rounded{
         margin-top: 3rem;
     }
     
-    footer p:first-of-type {
-        margin-top: .5rem;
-    }
-    
-
-    footer p:last-of-type {
-        margin-bottom: .5rem;
+    footer .fcontainer{
+        margin: .5rem;
     }
 
     nav ul li {
         margin: 0rem 0rem;
-    }
-
-    main .flex-right{
-        padding-right: 1rem;
     }
 }
