@@ -146,15 +146,13 @@ main {
 
 main ul{
     margin-left: 1.5rem;
-}
-
-main ul,li{
-    margin-top:.25rem;
+    margin-top: 0;
 }
 
 main .nover{
     margin-top: 0;
 }
+
 
 main .nunder{
     margin-bottom: 0;
