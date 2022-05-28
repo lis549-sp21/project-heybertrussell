@@ -319,6 +319,7 @@ footer .grid-item-r{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-top: 1rem;
   }
 
   /* Style the images inside the grid */
