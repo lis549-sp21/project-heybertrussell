@@ -75,7 +75,7 @@ h5{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -96,6 +96,7 @@ nav {
     width: 100%;
     padding: .5rem;
     padding-bottom: 1rem;
+    z-index: 9999
 }
 
 nav li {
@@ -213,6 +214,15 @@ footer .material-symbols-rounded{
     font-size: .65rem;
 }
 
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: .5rem;
+    padding-bottom: 1rem;
+}
+
 /* Footer Grid */
 
 footer .fcontainer{
@@ -294,3 +304,64 @@ footer .grid-item-r{
     }
 }
 
+/* Image Gallery */
+
+/* The grid: Four equal columns that floats next to each other */
+.imgcolumn {
+    display: inline-block;
+    width: auto;
+    height: 5rem;
+    padding-right: .25rem;
+    position: relative;
+  }
+
+  .imgrow{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  /* Style the images inside the grid */
+  .imgcolumn img {
+    opacity: 0.5; 
+    cursor: pointer; 
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .imgcolumn img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .imgrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .imgcontainer {
+    margin-top: .5rem;
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }

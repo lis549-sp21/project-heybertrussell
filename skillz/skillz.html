@@ -1,65 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="../css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Rob Brownell">
-    <meta name="description" content="RBrownell.com">
-    <title>R Brownell</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico?">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Rob Brownell" />
+    <meta name="description" content="RBrownell.com" />
+    <title>R Brownell | Skillz</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico?" />
+  </head>
 
-<body>
+  <body>
     <nav id="center">
-        <h1>R Brownell</h1>
-        <ul>
-            <li class="now"><a href="index.html">Home</a></li>
-            <li>|</li>
-            <li><a href="education/education.html">Education</a></li>
-            <li>|</li>
-            <li> <a href="experience/experience.html">Experience</a></li>
-            <li>|</li>
-            <li><a href="skills/skills.html">Skills</a></li>
-        </ul>
+      <h1>R Brownell</h1>
+      <ul>
+        <li class="now"><a href="index.html">Home</a></li>
+        <li>|</li>
+        <li><a href="education/education.html">Education</a></li>
+        <li>|</li>
+        <li><a href="experience/experience.html">Experience</a></li>
+        <li>|</li>
+        <li><a href="skills/skills.html">Skills</a></li>
+      </ul>
     </nav>
 
     <main>
-        <div class="container">
-           <h2>You Found Me!</h2>
-           <div style="text-align:center"><iframe style="text-align: center;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/J78eUtFfbZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+      <div class="container">
+        <h2>You Found Me!</h2>
+
+      <!-- The grid: four columns -->
+
+        <div class="imgrow">
+          <div class="imgcolumn" id="center">
+            <img
+              src="../images/cmon.png"
+              alt="Nature"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="imgcolumn">
+            <img
+              src="../images/tangled.png"
+              alt="Snow"
+              onclick="myFunction(this);"
+            />
+          </div>
+
+          <div class="imgcolumn">
+            <img
+              src="../images/abstract.jpg"
+              alt="Snow"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="imgcolumn">
+            <img
+              src="../images/gbr.png"
+              alt="Gordon Benet Ramsay"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="imgcolumn">
+            <img
+              src="../images/sebelius.jpeg"
+              alt="Gordon Benet Ramsay"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="imgcolumn">
+            <img
+              src="../images/design.jpg"
+              alt="Gordon Benet Ramsay"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="imgcolumn">
+            <img
+              src="../images/turnaround.jpeg"
+              alt="Gordon Benet Ramsay"
+              onclick="myFunction(this);"
+            />
+          </div>
         </div>
+
+        <!-- The expanding image container -->
+        <div class="imgcontainer">
+          <!-- Close the image -->
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+
+          <!-- Expanded image -->
+          <img id="expandedImg" style="width: 100%" />
+
+          <!-- Image text -->
+          <div id="imgtext"></div>
+        </div>
+
+      </div>
     </main>
 
     <footer>
-        <div class="fcontainer">
-            <div class="grid-container">
-                <div class="grid-item-l"><p>&copy; Rob Brownell, 2022</p></div>
-                <div class="grid-item-r"><p><a href="mailto: rbrownl@uw.edu">rbrownl@uw.edu <span
-                            class="material-symbols-rounded">mail</span></a></p>
-                </div>
-                <div class="grid-item-l">
-                    <p><a href="credits/credits.html">Credits</a></p>
-                </div>
-                <div class="grid-item-r">
-                    <p><a href="https://www.linkedin.com/in/robbrownell">in/robbrownell <svg
-                            style="width:.75rem;height:.75rem;position:relative;top:2px" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg></a></p>
-                </div>
-            </div>
+      <div class="fcontainer">
+        <div class="grid-container">
+          <div class="grid-item-l"><p>&copy; Rob Brownell, 2022</p></div>
+          <div class="grid-item-r">
+            <p>
+              <a href="mailto: rbrownl@uw.edu"
+                >rbrownl@uw.edu
+                <span class="material-symbols-rounded">mail</span></a
+              >
+            </p>
+          </div>
+          <div class="grid-item-l">
+            <p><a href="credits/credits.html">Credits</a></p>
+          </div>
+          <div class="grid-item-r">
+            <p>
+              <a href="https://www.linkedin.com/in/robbrownell"
+                >in/robbrownell
+                <svg
+                  style="
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    position: relative;
+                    top: 2px;
+                  "
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"
+                  /></svg
+              ></a>
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../js/index.js"></script>
 </html>
