@@ -34,7 +34,7 @@ a, a:visited {
     color: inherit;
 }
 
-a:hover{
+a:hover a:not(.skillz){
     color: #d0d0d0;
 }
 
@@ -164,6 +164,11 @@ main .position{
     font-weight: bold;
 }
 
+.skillz{
+    text-decoration: none;
+    cursor: text;
+}
+
 /* Main Grid */
 
 main .grid-container{
@@ -288,3 +293,4 @@ footer .grid-item-r{
         margin: 0rem 0rem;
     }
 }
+
