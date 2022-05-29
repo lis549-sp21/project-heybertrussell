@@ -19,17 +19,21 @@ footer {
 @media (prefers-color-scheme: light) {
     body {
         color: black;
-        background-color: #f0fff0;
+        background-color: #F9F9F9;
     }
 
     nav,
     footer {
-        background-color: #bbbebe;
+        background-color: #C7B198;
     }
 
     footer a:hover,
     body a:hover {
         color: #556372;
+    }
+
+    button{
+        background-color: #C7B198;
     }
 }
 
